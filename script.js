@@ -22,8 +22,8 @@ var boton2 = document.querySelector(".btn-desencriptar");
 boton2.onclick = desencriptar;
 
 function copiar(){
-    /*var codigoACopiar = document.getElementById(".mensaje").value;
-    navigator.clipboard.writeText(codigoACopiar.innerHTML);*/
+    var codigoACopiar = document.getElementById(".mensaje").value;
+    navigator.clipboard.writeText(codigoACopiar.innerHTML);
     document.querySelector(".mensaje").value = "";
     window.alert("Texto Copiado")
 }
